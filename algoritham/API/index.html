@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display JSON Data</title>
+</head>
+<body>
+    <div id="json-container">
+        <!-- JSON data will be displayed here -->
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+        const apiUrl = 'http://localhost:5000/predict';
+        const videoPath = 'F:\\mini\\new2\\cropped_data\\runs\\V1-0003_ball21665001.mp4'; // Replace with the actual path to your video
+
+        axios.post(apiUrl, { video_path: videoPath })
+            .then(response => {
+                // Convert JSON object to string for display
+                const jsonData = JSON.stringify(response.data);
+
+                // Display JSON data on the webpage
+                const jsonContainer = document.getElementById('json-container');
+                jsonContainer.textContent = jsonData;
+            })
+            .catch(error => {
+                console.error(error);
+            });
+    </script>
+</body>
+</html>
