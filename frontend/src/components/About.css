@@ -1,0 +1,18 @@
+.dev{
+        background-image: url('../img/bg1.jpeg');
+        opacity: 0.75;
+        background-position: top ; 
+        z-index: 1;
+        width: 1500px;
+}
+.de{
+    font-size: 20px;
+   
+}
+.ma{
+    width: 1500px;
+    
+}
+h5{
+    margin-left: 0px;
+}

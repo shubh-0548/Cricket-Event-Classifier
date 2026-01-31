@@ -1,0 +1,35 @@
+/* footer.css */
+
+/* Style for the entire footer */
+.cricket-footer {
+  background-color: #370d0d; /* Set your desired background color */
+  color: #fff; /* Text color */
+  padding: 20px; /* Add padding for spacing */
+  height: 300px;
+
+  
+}
+
+/* Style for social icons */
+.social-icons a {
+  color: #fff; /* Icon color */
+  margin-right: 10px; /* Adjust spacing between icons */
+  text-decoration: none;
+}
+
+/* Style for the cricket logo */
+.cricket-logo {
+  max-width: 100px; /* Adjust the logo size as needed */
+  display: block; /* Center the logo horizontally */
+  margin: 0 auto;
+  border: black ;
+  border-radius: 50%;
+}
+
+/* Style for the follow text */
+.cricket-footer p {
+  font-size: 14px; /* Adjust font size */
+  margin-top: 10px; /* Add spacing below the logo */
+}
+
+

@@ -1,0 +1,94 @@
+
+   .leaderboard-table {
+    border-collapse: separate; /* Use separate border-collapse for curved corners */
+    border-radius: 8px; /* Adjust the radius for curved corners */
+    overflow: hidden; /* Ensure the curved corners are visible */
+    width: 90%;
+    border: 2px solid #ccc; /* Add a 2px solid border for the 3D effect */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a box shadow for the 3D effect */
+    margin-left: 75px;
+  }
+  
+  .leaderboard-table th,
+  .leaderboard-table td {
+    border: 1px solid transparent; /* Hide inner borders for the curved table */
+    padding: 8px;
+    text-align: left;
+  }
+  
+  /* Styles for header row */
+  .leaderboard-table th {
+    background-color: #f2f2f2;
+    border-bottom: 2px solid #ccc;
+  }
+  
+  /* Alternate row background colors */
+  .leaderboard-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Hover effect */
+  .leaderboard-table tr:hover {
+    background-color: #eaeaea;
+  }
+  
+  /* Remove bottom border for last row */
+  .leaderboard-table tr:last-child td {
+    border-bottom: none;
+  }
+  
+  /* Add left border for first column */
+  .leaderboard-table tr td:first-child {
+    border-left: 1px solid #ccc;
+  }
+  
+  /* Add right border for last column */
+  .leaderboard-table tr td:last-child {
+    border-right: 1px solid #ccc;
+  }
+  
+  /* Highlighted row styles */
+  .highlighted-row {
+    font-weight: bold;
+  }
+  
+  .highlighted-row td {
+    padding: 8px;
+  }
+  
+  /* Highlighted row with custom background and text color */
+  tr.highlighted-row.you {
+    background-color: rgb(159, 238, 159);
+    color: rgb(3, 5, 3);
+  }
+
+
+
+  .leaderboard-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .left-box {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin: 10px;
+    text-align: left;
+    display:flex;
+    
+  }
+  
+
+
+  .right-box{
+    flex: 1;
+    display:flex; 
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin: 10px;
+    
+  }
+
+
+  

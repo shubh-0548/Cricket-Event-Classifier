@@ -1,0 +1,142 @@
+.super {
+    display: flex;
+    background: linear-gradient(120deg, #4CAF50, #408140); /* Green gradient for grass */
+}
+
+.rectangle-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+    width: 1250px;
+    height: 300px;
+    border-radius: 15px;
+    margin-top: 50px;
+    background-color: #7cbfc1;
+    overflow: hidden;
+}
+
+/* Draw cricket crease on the left side */
+.rectangle-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 80px;
+    width: 5px;
+    height: 120%;
+    background-color: #f0f0f0;
+}
+
+/* Draw cricket crease on the right side */
+.rectangle-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 80px;
+    width: 5px;
+    height: 120%;
+    background-color: #f0f0f0;
+}
+
+/* Draw wide ball crease */
+.wide-ball-crease {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 100%;
+    background-color: #f0f0f0;
+}
+
+/* Horizontal lines */
+.horizontal-line {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #0b0a0a;
+}
+
+/* Top horizontal line */
+.horizontal-line.top {
+    top: 0;
+}
+
+/* Bottom horizontal line */
+.horizontal-line.bottom {
+    bottom: 0;
+}
+
+.flag-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.vs-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.vs-circle {
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+}
+
+.flag-link {
+    text-decoration: none;
+}
+
+.flag-img {
+    width: 250px;
+    height: 200px;
+}
+
+.back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: 65%; /* Adjust the top position as needed */
+    left: 12%; /* Center horizontally */
+    transform: translateX(-50%);
+    z-index: 10; /* Ensure the text appears above other elements */
+    font-size: 100px; /* Adjust font size as needed */
+    font-weight: bold; /* Optionally set font weight */
+    color: white; /* Text color */
+  }
+
+  .bottom {
+    transform: translateX(-50%);
+    z-index: 10; /* Ensure the text appears above other elements */
+    font-size: 100px; /* Adjust font size as needed */
+    font-weight: bold; /* Optionally set font weight */
+    color: white; /* Text color */
+    bottom: 400px; /* Adjust bottom position for the bottom text */
+    left: 50%;
+    margin-top: 15%;
+    
+  }
+  

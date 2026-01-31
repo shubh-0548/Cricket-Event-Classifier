@@ -1,0 +1,20 @@
+.img{
+    height: 250px;
+    width: 475px;
+    transition: transform 0.5s ease; 
+}
+.img:hover{
+    transform: scale(1.1);
+}
+@keyframes animateSection {
+    0% {
+        transform: scale(1); /* Initial scale */
+    }
+    100% {
+        transform: scale(1.1); /* Scale on hover */
+    }
+}
+
+.img{
+    animation: animateSection 1.5s ease; /* Apply the animation */
+}

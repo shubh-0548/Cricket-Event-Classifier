@@ -1,0 +1,40 @@
+/* HorizontalBox.css */
+.horizontal-box {
+    display: flex;
+    flex-direction: column; /* Arrange boxes vertically */
+    max-width: 3000px;
+  }
+  
+  .box {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    border: 2px solid #ccc; /* Add a solid border */
+    border-radius: 8px; /* Add border radius for rounded corners */
+    margin: 10px; /* Add margin for spacing between boxes */
+    padding: 10px;
+  }
+  
+  .left {
+    flex-direction: row-reverse; /* Reverse order for left boxes */
+  }
+  
+  .box-image {
+    max-width: 300px; /* Adjust the width of the image as needed */
+    margin: 0 50px; /* Add margin for spacing between image and content */
+  }
+  
+  .box-content {
+    flex: 1; /* Take up remaining space */
+    padding: 20px; /* Add padding to the content area */
+  }
+  
+  .left-content {
+    text-align: left; /* Align left for left boxes */
+  }
+  
+  .right-content {
+    text-align: right; /* Align right for the right box (box 2) */
+  }
+  
+  /* Add a 3D effect to the border */
+  
